@@ -1,0 +1,147 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(26, 33, 43);
+    border-radius: 10%;
+    padding: 30px;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.circle {
+    background-color: rgb(38, 47, 56);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    color: var(--White);
+}
+
+.star-icon {
+    background-color: rgb(38, 47, 56);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    color: var(--White);
+}
+
+.star {
+    margin-top: 12px;
+    height: 20px;
+    width: 20px;
+}
+
+h1 {
+    color: var(--White);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    color: var(--Medium-Grey);
+    font-weight: 400;
+}
+
+.rating-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.submit-button {
+    width: 100%;
+    height: 40px;
+    background-color: var(--Orange);
+    color: var(--White);
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;
+}
+
+.circle:hover {
+    background-color: rgb(124, 136, 151);
+}
+
+.submit-button:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+.rated-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you-image {
+    margin-top: 20px;
+}
+
+.rating-summary {
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 30px auto;
+    background-color: rgb(38, 47, 56);
+    color: var(--Orange);
+    border-radius: 15px;
+}
+
+.rated-text-h1 {
+    text-align: center;
+}
+
+.rated-text-p {
+    text-align: center;
+}
