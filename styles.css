@@ -94,9 +94,7 @@ h1 {
     margin-top: 30px;
 }
 
-.circle:hover {
-    background-color: rgb(124, 136, 151);
-}
+
 
 .submit-button:hover {
     background-color: var(--White);

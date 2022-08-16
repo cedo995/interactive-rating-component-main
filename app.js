@@ -25,3 +25,16 @@ submitButton.addEventListener("click", function () {
     }
 
 });
+
+circleButtons.forEach(circle => {
+    circle.addEventListener('mouseover', function () {
+        if (circle.innerText != ratingScore) circle.style.backgroundColor = 'rgb(124, 136, 151)';
+    })
+});
+
+circleButtons.forEach(circle => {
+    circle.addEventListener('mouseout', function () {
+        if (circle.innerText != ratingScore) circle.style.backgroundColor = 'rgb(38, 47, 56)';
+    })
+});
+
